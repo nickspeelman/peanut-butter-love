@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Peanut Butter Love Fundraiser</title>
+  <style>
+    body {
+      margin:0;
+      font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      background:#fafafa;
+      color:#111;
+      display:flex;
+      flex-direction:column;
+      min-height:100vh;
+    }
+    header {
+      text-align:center;
+      padding:2rem 1rem 1rem;
+    }
+    main {
+      flex:1;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:2rem 1rem;
+    }
+    iframe {
+      width:100%;
+      max-width:700px;
+      height:800px; /* big enough to hold the full jar page */
+      border:none;
+      box-shadow:0 4px 12px rgba(0,0,0,.1);
+      border-radius:12px;
+      background:white;
+    }
+    .explain {
+      max-width:700px;
+      margin:2rem auto;
+      padding:0 1rem;
+      font-size:1.05rem;
+      line-height:1.5;
+      color:#444;
+    }
+    footer {
+      text-align:center;
+      padding:1rem;
+      color:#777;
+      font-size:.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Peanut Butter Love</h1>
+  </header>
+
+  <main>
+    <!-- Embed your current jar.html -->
+    <iframe src="jar.html" title="Peanut Butter Love Jar"></iframe>
+  </main>
+
+  <section class="explain">
+    <h2>About This Project</h2>
+    <p>
+      This is a placeholder for your explanation text. You can describe what
+      the fundraiser is about, why you built the peanut butter jar visualization,
+      and how people can get involved.
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Peanut Butter Love Project
+  </footer>
+</body>
+</html>
