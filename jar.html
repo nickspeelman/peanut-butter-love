@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Peanut Butter Love</title>
 <style>
   :root{
     --pb:#C7773E;       /* peanut butter color */
@@ -33,7 +32,7 @@
 </head>
 <body>
 <div class="wrap">
-  <h1 id="title">Peanut Butter Love</h1>
+  <h1 id="title">Progress</h1>
   <div class="meta" id="updated">Loading…</div>
 
   <div class="board">
@@ -289,7 +288,6 @@ async function fetchData(){
     const res = await fetch(API + '?t=' + Date.now(), { cache: 'no-store' });
     const j = await res.json();
     // Update text
-    if (j.title) titleEl.textContent = j.title;
     const goal = Number(j.goal_lbs || 0);
     const total = Number(j.total_lbs || 0);
     const progress = goal > 0 ? total/goal : 0;
